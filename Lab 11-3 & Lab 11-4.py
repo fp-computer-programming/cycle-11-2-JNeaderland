@@ -7,7 +7,7 @@ def randnum(num):
     while guess != num:
         print ("Pease try again")
         guess = input("What is your guess? ")
-randnum(67)
+randnum(rand)
 
 def fibonacci (numnum):
     nums = 0
