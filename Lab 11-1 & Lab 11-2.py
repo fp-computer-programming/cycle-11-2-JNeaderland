@@ -11,14 +11,15 @@ def find_evens(a, b):
 find_evens(num_a, num_b)
 
 
-#word = input("What is your word? ")
+word = input("What is your word? ")
 def is_palindrome(pal):
+    pal = pal.lower()
     pal = str(pal)
-    leng = len(pal) - 1
     bac = []
     itteration = 0
     pal = " ".join(pal)
     pal = pal.replace(" ", "")
+    leng = len(pal)
     print(pal)
     for back in range(leng):
         bac.append(pal[leng-1])
@@ -31,4 +32,4 @@ def is_palindrome(pal):
         print ("True")
     else:
         print ("False")
-is_palindrome ("race car")
+is_palindrome (word)
